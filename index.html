@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Santa Isabel de Hungría - Fundación de Ayuda Social</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Casa de Santa Isabel de Hungría</h1>
+                        <p>Fundación de Ayuda Social</p>
+                    </div>
+                </div>
+
+                <!-- J-H-S Centered -->
+                <div class="jhs-logo">
+                    <span>J-H-S</span>
+                </div>
+
+                <nav class="nav-menu">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#donaciones" class="nav-donate">Donaciones</a>
+                    <a href="#testimonios">Testimonios</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#donaciones">Donaciones</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Transformando Vidas con <span class="highlight">Amor y Esperanza</span></h2>
+                    <p>Brindamos apoyo integral a mujeres en situación de calle y prostitución, así como a recicladores y habitantes de calle en Bogotá. Tu donación puede cambiar una vida para siempre.</p>
+                    <div class="hero-buttons">
+                        <a href="#donaciones" class="btn btn-primary">
+                            <i class="fas fa-heart"></i> Donar Ahora
+                        </a>
+                        <a href="#nosotros" class="btn btn-secondary">
+                            Conoce Nuestro Trabajo
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/casaAzul.webp" alt="Casa de Santa Isabel de Hungría">
+                    <div class="authorization-badge">
+                        <div class="badge-content">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <p><strong>Autorizada por</strong></p>
+                                <p>Arquidiócesis de Bogotá</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donations Section -->
+    <section id="donaciones" class="donations">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">¡Tu Ayuda es Fundamental!</div>
+                <h2>Haz tu Donación y Cambia Vidas</h2>
+                <p>Cada peso cuenta para brindar alimentación, refugio, atención médica y programas de rehabilitación a quienes más lo necesitan.</p>
+            </div>
+
+            <div class="donations-content">
+                <!-- Bank Transfer Information -->
+                <div class="bank-transfers">
+                    <div class="card bank-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-hand-holding-heart"></i> Transferencias Bancarias</h3>
+                            <p>Puedes donar directamente a nuestras cuentas bancarias</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="bank-account">
+                                <div class="bank-info">
+                                    <h4>Bancolombia</h4>
+                                    <p>Cuenta Ahorros</p>
+                                </div>
+                                <div class="bank-logo">
+                                    <img src="images/logo-bancolombia1.png" alt="Bancolombia">
+                                </div>
+                                <div class="account-number">
+                                    <span class="account">123-456789-01</span>
+                                    <button class="copy-btn" onclick="copyAccount('123-456789-01', 'Bancolombia')">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bank-account">
+                                <div class="bank-info">
+                                    <h4>Banco de Bogotá</h4>
+                                    <p>Cuenta Corriente</p>
+                                </div>
+                                <div class="bank-logo">
+                                    <img src="images/banco-de-bogota.webp" alt="Banco de Bogotá">
+                                </div>
+                                <div class="account-number">
+                                    <span class="account">987-654321-02</span>
+                                    <button class="copy-btn" onclick="copyAccount('987-654321-02', 'Banco de Bogotá')">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bank-account">
+                                <div class="bank-info">
+                                    <h4>Davivienda</h4>
+                                    <p>Cuenta Ahorros</p>
+                                </div>
+                                <div class="bank-logo">
+                                    <img src="images/LOGO-DAVIVIENDA-HORIZONTAL_1_BLANCO.png" alt="Davivienda">
+                                </div>
+                                <div class="account-number">
+                                    <span class="account">456-789123-03</span>
+                                    <button class="copy-btn" onclick="copyAccount('456-789123-03', 'Davivienda')">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bank-account nequi">
+                                <div class="bank-info">
+                                    <h4>Nequi</h4>
+                                    <p>Cuenta Digital</p>
+                                </div>
+                                <div class="bank-logo">
+                                    <img src="images/logo-Nequi_by_Bancolombia.png" alt="Nequi">
+                                </div>
+                                <div class="account-number">
+                                    <span class="account">300-123-4567</span>
+                                    <button class="copy-btn" onclick="copyAccount('300-123-4567', 'Nequi')">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="account-details">
+                                <p><strong>Titular:</strong> Fundación Casa de Santa Isabel de Hungría</p>
+                                <p><strong>NIT:</strong> 123.456.789-0</p>
+                                <p><strong>Tipo de cuenta:</strong> Sin ánimo de lucro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact Information -->
+                <div class="impact-info">
+                    <div class="card impact-card">
+                        <div class="card-header">
+                            <h3>Tu Donación Logra:</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="impact-item">
+                                <div class="impact-icon">$</div>
+                                <div class="impact-text">
+                                    <h4>$20,000 COP</h4>
+                                    <p>Alimentación para una persona por un día</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-icon">$</div>
+                                <div class="impact-text">
+                                    <h4>$50,000 COP</h4>
+                                    <p>Kit de higiene personal completo</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-icon">$</div>
+                                <div class="impact-text">
+                                    <h4>$100,000 COP</h4>
+                                    <p>Atención médica básica y medicamentos</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-icon">$</div>
+                                <div class="impact-text">
+                                    <h4>$200,000 COP</h4>
+                                    <p>Refugio seguro por una semana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card stats-card">
+                        <div class="card-content">
+                            <div class="stat-number">+500</div>
+                            <p class="stat-label">Vidas Transformadas</p>
+                            <p class="stat-period">En los últimos 12 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="badge">Nuestra Misión</div>
+                    <h2>Quiénes Somos y Dónde Trabajamos</h2>
+                    <p>La Fundación Casa de Santa Isabel de Hungría es una organización sin ánimo de lucro que desde hace más de 15 años trabaja incansablemente en las calles de Bogotá, brindando esperanza y oportunidades a las personas más vulnerables de
+                        nuestra sociedad.</p>
+
+                    <div class="services">
+                        <div class="service-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Mujeres en Situación de Calle</h4>
+                                <p>Programas de rehabilitación, refugio seguro y reinserción social</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <div>
+                                <h4>Recicladores y Habitantes de Calle</h4>
+                                <p>Apoyo nutricional, atención médica y capacitación laboral</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Programas de Prevención</h4>
+                                <p>Educación y sensibilización en comunidades vulnerables</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20pantalla%202025-07-24%20103806-0PV9BYzt2uPRDfhhzDLaWJ8rD1Z88v.png" alt="Trabajo en las calles" class="about-img">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20pantalla%202025-07-24%20103959-Da96W6GmhmdjGbxYuoXGhuGG3L41QM.png" alt="Apoyo a recicladores" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authorization Section -->
+    <section class="authorization">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Respaldo Institucional</div>
+                <h2>Autorizada y Respaldada por la Iglesia Católica</h2>
+            </div>
+            <div class="auth-content">
+                <div class="card auth-card">
+                    <div class="auth-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Arquidiócesis de Bogotá</h3>
+                    <p>Nuestra fundación cuenta con la autorización y bendición de la Arquidiócesis de Bogotá para realizar nuestra labor social.</p>
+                </div>
+                <div class="card auth-card">
+                    <div class="auth-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Vicaría de Cristo Sacerdote</h3>
+                    <p>Trabajamos bajo la guía espiritual y el respaldo de la Vicaría de Cristo Sacerdote en nuestra misión de servicio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Historias de Esperanza</div>
+                <h2>Testimonios de Transformación</h2>
+                <p>Estas son algunas de las historias reales de personas que han encontrado una nueva oportunidad gracias al apoyo de nuestra fundación.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="card testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Llegué a la fundación sin esperanza, viviendo en las calles por más de 3 años. Hoy tengo un trabajo digno y un hogar. La Casa de Santa Isabel me devolvió la vida."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div>
+                            <h4>María C.</h4>
+                            <p>Beneficiaria desde 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Como reciclador, siempre viví al día. La fundación me ayudó a organizarme, me dieron herramientas y ahora tengo mi propia cooperativa de reciclaje."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar green">J</div>
+                        <div>
+                            <h4>Jorge L.</h4>
+                            <p>Beneficiario desde 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Mis hijos y yo encontramos refugio cuando más lo necesitábamos. Ahora estudio enfermería y mis hijos van al colegio. Gracias por no rendirse conmigo."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar blue">A</div>
+                        <div>
+                            <h4>Ana S.</h4>
+                            <p>Beneficiaria desde 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="badge">Contáctanos</div>
+                    <h2>¿Quieres Ayudar o Necesitas Más Información?</h2>
+                    <p>Estamos aquí para responder tus preguntas y recibir tu apoyo. Cada mensaje es importante para nosotros.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Cl. 67 #20-58, Bogotá, Colombia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+57 (1) 234-5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@casasantaisabel.org</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card contact-form-card">
+                    <div class="card-header">
+                        <h3>Envíanos un Mensaje</h3>
+                        <p>Completa el formulario y nos pondremos en contacto contigo pronto.</p>
+                    </div>
+                    <div class="card-content">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nombre</label>
+                                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Apellido</label>
+                                    <input type="text" name="apellido" placeholder="Tu apellido" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono</label>
+                                <input type="tel" name="telefono" placeholder="+57 300 123 4567">
+                            </div>
+                            <div class="form-group">
+                                <label>Mensaje</label>
+                                <textarea name="mensaje" placeholder="Cuéntanos cómo quieres ayudar o qué información necesitas..." rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Casa de Santa Isabel</span>
+                    </div>
+                    <p>Transformando vidas con amor y esperanza desde hace más de 15 años en Bogotá.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#donaciones">Donaciones</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Cl. 67 #20-58, Bogotá</li>
+                        <li>+57 (1) 234-5678</li>
+                        <li>info@casasantaisabel.org</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Respaldo</h4>
+                    <ul>
+                        <li>Arquidiócesis de Bogotá</li>
+                        <li>Vicaría de Cristo Sacerdote</li>
+                        <li>Registro DIAN: 123.456.789-0</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fundación Casa de Santa Isabel de Hungría. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copy notification -->
+    <div id="copyNotification" class="copy-notification">
+        <i class="fas fa-check"></i>
+        <span>Número de cuenta copiado</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
