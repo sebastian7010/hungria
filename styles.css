@@ -63,7 +63,7 @@ body {
     font-size: 1.25rem;
     font-weight: 700;
     color: #1f2937;
-    margin-bottom: 0.25rem;
+    margin-bottom: 2.25rem;
 }
 
 .logo-text p {
@@ -383,8 +383,8 @@ section {
 }
 
 .bank-logo img {
-    width: 80px;
-    height: 40px;
+    width: 170px;
+    height: auto;
     object-fit: contain;
     border-radius: 0.25rem;
 }
@@ -591,7 +591,7 @@ section {
 
 .about-images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
 }
 
@@ -957,7 +957,7 @@ section {
         font-size: 1.5rem;
     }
     .hero {
-        padding: 120px 0 60px;
+        padding: 140px 0 80px;
         text-align: center;
     }
     .hero-content {
